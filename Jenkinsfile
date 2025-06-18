@@ -10,27 +10,26 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'gradlew.bat build'
+                bat 'mvn clean install -DskipTests'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'gradlew.bat test'
+                bat 'mvn test'
             }
         }
 
         stage('Archive') {
             steps {
-                archiveArtifacts artifacts: '**/build/libs/*.jar', fingerprint: true
+                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
             }
         }
 
         stage('Deploy') {
             steps {
                 script {
-                    // Lọc bỏ file -plain.jar, chỉ lấy JAR thực thi chính
-                    def jarFiles = findFiles(glob: 'build/libs/*.jar').findAll { !it.name.contains('-plain') }
+                    def jarFiles = findFiles(glob: 'target/*.jar').findAll { !it.name.contains('original') }
 
                     if (jarFiles.isEmpty()) {
                         error "❌ No valid JAR file found to deploy"

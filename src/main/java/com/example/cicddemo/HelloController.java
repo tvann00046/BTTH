@@ -28,7 +28,7 @@ public class HelloController {
                 </style>
             </head>
             <body>
-                <h1>Chào mừng bạn đến với Website bán hàng của ĐTV</h1>
+                <h1>Chào mừng bạn đến với Công Ty TNHH 1 thành viên của ĐTV</h1>
                 <button onclick="alert('Tiếp tục mua sắm nhé!')">OK</button>
             </body>
             </html>

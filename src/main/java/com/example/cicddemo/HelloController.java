@@ -72,14 +72,17 @@ public class HelloController {
                 <title>Giới thiệu</title>
                 <style>
                     body {
+                        margin: 0;
+                        padding: 0;
+                        min-height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: linear-gradient(135deg, #74ebd5, #ACB6E5);
                         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                        background-color: #f4f4f4;
-                        padding: 40px;
-                        color: #333;
                     }
                     .content {
                         max-width: 800px;
-                        margin: auto;
                         background-color: white;
                         padding: 30px;
                         border-radius: 10px;

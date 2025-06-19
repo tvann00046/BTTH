@@ -55,7 +55,7 @@ public class HelloController {
             <body>
                 <div class="container">
                     <h1>Chào mừng bạn đến với Công Ty TNHH 1 Thành Viên của ĐTV</h1>
-                    <button onclick="alert('Chúc bạn mua sắm vui vẻ!')">OK</button>
+                    <button onclick="alert('Chúc bạn có 1 buổi sáng vui vẻ!')">OK</button>
                 </div>
             </body>
             </html>

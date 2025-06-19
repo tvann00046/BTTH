@@ -54,7 +54,7 @@ public class HelloController {
             </head>
             <body>
                 <div class="container">
-                    <h1>Chào mừng bạn đến với Công ty TNHH Một Thành Viên của ĐTV</h1>
+                    <h1>Chào mừng bạn đến với Công ty TNHH "Một Thành Viên" của ĐTV</h1>
                     <button onclick="window.location.href='/gioithieu'">OK</button>
                 </div>
             </body>
